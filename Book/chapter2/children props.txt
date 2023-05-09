@@ -1,0 +1,18 @@
+// App.js
+
+import MyComponent from "./MyComponent";
+// MyComponent 파일에서 MyComponent 함수 불러오기
+
+const App = () => {
+  return <MyComponent>리액트</MyComponent>;
+};
+
+export default App;
+
+// MyComponent.js
+
+const MyComponent = (props) => {
+  return <div> {props.children}</div>;
+};
+
+export default MyComponent;

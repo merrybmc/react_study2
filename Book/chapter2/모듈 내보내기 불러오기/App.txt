@@ -1,0 +1,9 @@
+import "./App.css";
+import MyComponent from "./MyComponent";
+// MyComponent 파일에서 MyComponent 함수 불러오기
+
+const App = () => {
+  return <MyComponent />;
+};
+
+export default App;

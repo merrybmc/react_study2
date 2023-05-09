@@ -1,0 +1,22 @@
+function App() {
+  return <Grandfather />;
+}
+
+function Grandfather() {
+  const name = "할아버지";
+  return <Mother GF_Name={name} />;
+}
+
+function Mother(props) {
+  return <Child GF_Name={props.GF_Name} />;
+}
+
+function Child(data) {
+  return (
+    <div>
+      <p>{data.GF_Name}</p>
+    </div>
+  );
+}
+
+export default App;

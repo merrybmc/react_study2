@@ -1,0 +1,22 @@
+// import React from "react";
+function Child() {
+  return (
+    <div>
+      <p>연결 성공!</p>
+    </div>
+  );
+}
+
+function Mother() {
+  return <Child />;
+}
+
+function Grandfather() {
+  return <Mother />;
+}
+
+function App() {
+  return <Grandfather />;
+}
+
+export default App;

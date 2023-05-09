@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 5px 0px 0px 5px;
+        padding: 0.25px 0px 0.25px 0px;
+    }
+</style>
+
+<body>
+    <form>
+        <p class="test">First Name : </p>
+        <input type="text" name="input_NE" class="firstName_Input" required>
+        <p>Last Name : </p>
+        <input type="text" name="input_NE" class="lastName_Input" required>
+        <p>Email : </p>
+        <input type="text" name="input_NE" class="email_Input" required>
+
+        <ul>
+            <span> Gender : </span>
+            <input type="radio" name="Gender" id="">Male
+            <input type="radio" name="Gender" id="">Female
+        </ul>
+
+        <ul>
+            <span> Favorite : </span>
+            <input type="checkbox" name="box" id="">HTML
+            <input type="checkbox" name="box" id="">JAVA
+            <input type="checkbox" name="box" id="">JavaScript
+        </ul>
+
+        <div>
+            <span> Browser : </span>
+            <select>
+                <option value="browser">크롬</option>
+                <option value="browser">웨일</option>
+                <option value="browser">엣지</option>
+                <option value="browser">파이어폭스</option>
+            </select>
+        </div>
+
+        <div>
+            <span> Birthday : </span>
+            <input type="date">
+        </div>
+
+        <input type="submit" name="input_NE"></button>
+    </form>
+</body>
+<!-- 
+<script>
+    const firstName_Input = document.querySelector(".firstName_Input")
+    let lastName_Input = document.querySelector(".lastName_Input")
+    let email_Input = document.querySelector(".email_Input")
+    let submit = document.querySelector(".submit")
+    let test = document.querySelector(".test")
+
+    let lastName = lastName_Input.value
+    let email = email_Input.value
+
+
+
+
+    submit.addEventListener("click", () => {
+        const firstName = firstName_Input.value
+        console.log(firstName)
+        console.log(lastName)
+        console.log(email)
+        test.innerHTML = `입력값 : ${firstName}`
+
+        // if (firstName_Input == undefined || lastName_Input == undefined || email_Input == undefined) {
+
+        // }
+    }) -->
+
+
+
+</script>
+
+</html>

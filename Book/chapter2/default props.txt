@@ -1,0 +1,14 @@
+const MyComponent = (props) => {
+  return (
+    <div>
+      제 이름은 {props.name} 입니다. {props.value}
+    </div>
+  );
+};
+
+MyComponent.defaultProps = {
+  name: "기본 이름",
+  value: 9999,
+};
+
+export default MyComponent;

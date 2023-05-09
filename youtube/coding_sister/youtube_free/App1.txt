@@ -1,0 +1,26 @@
+import logo from "./logo.svg";
+import { useState } from "react";
+import "./App.css";
+import Box from "./box";
+function App() {
+  // let count = 0;
+  const [count, countplus] = useState([0, 1, 2]);
+
+  const plus = () => {
+    let newArray = [...count];
+    newArray[0] = newArray[0] + 1;
+    countplus(newArray);
+  };
+  return (
+    <main>
+      <div>{count[0]}</div>
+      <button onClick={plus}>증가</button>
+      <Box num="1" name="코알누" />
+      <Box num="2" name="방탄소년단" />
+      <Box num="3" name="치킨" />
+      <Box num="4" name="통닭" />
+    </main>
+  );
+}
+
+export default App;

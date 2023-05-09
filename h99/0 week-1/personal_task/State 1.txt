@@ -1,0 +1,33 @@
+import React from "react";
+import { useState } from "react";
+// import Layout from "./components/Layout";
+
+function App() {
+  return <GrandFather></GrandFather>;
+}
+
+function GrandFather() {
+  const [name, setName] = useState("김할아");
+  return <Mother GrandFatherName={name} setName={setName}></Mother>;
+}
+
+function Mother(props) {
+  return <Child grandFatherName={props.GrandFatherName} setName={props.setName}></Child>;
+}
+
+function Child(props) {
+  return (
+    <div>
+      <button
+        onClick={() => {
+          props.setName("박할아");
+        }}
+      >
+        할아버지 이름 바꾸기
+      </button>
+      <div>{props.grandFatherName}</div>
+    </div>
+  );
+}
+
+export default App;

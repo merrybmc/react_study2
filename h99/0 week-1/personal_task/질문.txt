@@ -1,0 +1,67 @@
+1) 레이아웃이 children으로 받는거 말고 다른건 없는지??
+현업에서도 이렇게 쓰이는지??
+( w. Layout.js )
+
+2) List에서 onDeleteHandler와 onEditHandler의 방법이 좋은건지??
+코드 구조가 개인적으로 별로인거 같기도 해서
+indexOf로 객체의 인덱스 값을 찾아서
+splice로 해당 인덱스를 삭제시켜버리는게 더 좋지 않은지??
+
+3) onSubmit을 필수로 써야 하는지?? 자주 쓰이는지???
+onSubmit을 안쓰고 onClick을 써도 되는지??
+
+4) input 안에 value값을 안넣어도 되는지??
+value값을 안넣고 input의 value값을 초기화할 수 있는지??
+input에 className을 주고 document.querySelector로
+value를 초기화 시키는 방법은 어떤지??
+
+3) prettier 자주 쓰시는지?
+예1) h99/0 week-1/TodoList.js
+예2) h99/list/List.js
+예2) book/Counter.js
+
+4)style 적용 방법으로 어떤 방법이 제일 좋은지??
+
+1. const style {
+     backgroundColor="black" };
+   return <div style={style} />
+
+2. return <div style={ { backgroundColor: "black"} } />
+
+3. 
+import "./App.css"
+
+return <div className="divStyle" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3) 자식에서 부모로 보내는거?
+
+5) 웹 앱이 만드는게 좋을지?
+웹을 만드는게 좋을지?
+
+6) 슬랙 잡담방을 보니까 대부분 커뮤니티 사이트나
+투두리스트던데 이런거 만들어도 취업이 잘되는지?
+
